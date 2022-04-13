@@ -1,0 +1,55 @@
+entity Utilisateur {
+  pseudo String required minlength(3)
+}
+
+entity Course {
+  numero Integer required
+  date Instant required
+}
+
+entity Restaurant {
+  nom String required minlength(2) 
+}
+
+entity Produit {
+  nom String required minlength(2) pattern(/[a-z]*/)
+  prix Float required min(0)
+}
+
+entity Panier {
+  prixtotal Integer required min(0)
+}
+
+entity Cooperative {
+  name String required minlength(2) pattern(/[a-z]*/)
+}
+
+entity Role{
+  role String required pattern(/[a-z]*/)
+}
+
+relationship OneToMany{
+	Utilisateur to Course
+    Utilisateur to Panier
+    Utilisateur to Cooperative
+
+  	
+    Panier to Produit
+  
+    Restaurant to Produit
+    
+    Cooperative to Restaurant
+}
+
+
+relationship OneToOne{
+ Course to Panier
+
+}
+
+relationship ManyToOne{
+	Role to Utilisateur 
+}
+
+dto * with mapstruct
+
