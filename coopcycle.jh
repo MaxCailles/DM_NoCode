@@ -1,5 +1,7 @@
 entity Utilisateur {
   pseudo String required minlength(3)
+  email String required pattern(/[a-z]*/@/[a-z]*/)
+  numeroTelephone String required
 }
 
 entity Course {
@@ -50,6 +52,7 @@ relationship OneToOne{
 relationship ManyToOne{
 	Role to Utilisateur 
 }
+
 
 dto * with mapstruct
 
