@@ -1,0 +1,24 @@
+{
+  "coopcycleApp": {
+    "payement": {
+      "home": {
+        "title": "Payements",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Payement",
+        "createOrEditLabel": "Create or edit a Payement",
+        "notFound": "No Payements found"
+      },
+      "created": "A new Payement is created with identifier {{ param }}",
+      "updated": "A Payement is updated with identifier {{ param }}",
+      "deleted": "A Payement is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Payement {{ id }}?"
+      },
+      "detail": {
+        "title": "Payement"
+      },
+      "id": "ID",
+      "panier": "Panier"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "applications": "*",
+  "changelogDate": "20220413101404",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "utilisateur",
+  "fields": [
+    {
+      "fieldName": "pseudo",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern"],
+      "fieldValidateRulesPattern": "[a-z]*/@/[a-z]*"
+    },
+    {
+      "fieldName": "numeroTelephone",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Utilisateur",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "course",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "course",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "panier",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "panier",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cooperative",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "cooperative",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "role",
+      "otherEntityRelationshipName": "utilisateur",
+      "relationshipName": "role",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

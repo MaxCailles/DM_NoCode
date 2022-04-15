@@ -1,0 +1,23 @@
+{
+  "applications": "*",
+  "changelogDate": "20220413101411",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "payement",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Payement",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "panier",
+      "otherEntityRelationshipName": "payement",
+      "ownerSide": true,
+      "relationshipName": "panier",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

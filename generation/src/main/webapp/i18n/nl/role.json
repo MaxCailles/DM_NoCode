@@ -1,0 +1,25 @@
+{
+  "coopcycleApp": {
+    "role": {
+      "home": {
+        "title": "Roles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Role",
+        "createOrEditLabel": "Maak of wijzig een Role",
+        "notFound": "No Roles found"
+      },
+      "created": "A new Role is created with identifier {{ param }}",
+      "updated": "A Role is updated with identifier {{ param }}",
+      "deleted": "A Role is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Role {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Role"
+      },
+      "id": "ID",
+      "role": "Role",
+      "utilisateur": "Utilisateur"
+    }
+  }
+}

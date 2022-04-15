@@ -1,0 +1,24 @@
+{
+  "coopcycleApp": {
+    "payement": {
+      "home": {
+        "title": "Payements",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Payement erstellen",
+        "createOrEditLabel": "Payement erstellen oder bearbeiten",
+        "notFound": "Keine Payements gefunden"
+      },
+      "created": "Payement erstellt mit ID {{ param }}",
+      "updated": "Payement aktualisiert mit ID {{ param }}",
+      "deleted": "Payement gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Payement {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Payement"
+      },
+      "id": "ID",
+      "panier": "Panier"
+    }
+  }
+}

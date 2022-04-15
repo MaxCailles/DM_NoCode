@@ -1,0 +1,49 @@
+{
+  "applications": "*",
+  "changelogDate": "20220413101408",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "panier",
+  "fields": [
+    {
+      "fieldName": "prixtotal",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": "0"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Panier",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "produit",
+      "otherEntityRelationshipName": "panier",
+      "relationshipName": "produit",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "course",
+      "otherEntityRelationshipName": "panier",
+      "ownerSide": false,
+      "relationshipName": "course",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "payement",
+      "otherEntityRelationshipName": "panier",
+      "ownerSide": false,
+      "relationshipName": "payement",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "utilisateur",
+      "otherEntityRelationshipName": "panier",
+      "relationshipName": "utilisateur",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}
